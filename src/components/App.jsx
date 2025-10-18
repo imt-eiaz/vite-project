@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import CityList from "./CityList";
+import CountryList from "./CountryList";
 
 const BASE_URL = "http://localhost:9000";
 
@@ -25,7 +26,11 @@ function App() {
 
   return (
     <div>
+      <h2>Here is Cities List</h2>
       <CityList cities={cities} />
+      <br />
+      <h2>Here is Countries List</h2>
+      <CountryList cities={cities} />
     </div>
   );
 }

@@ -2,7 +2,7 @@ function CityItem({ city }) {
   const { cityName, country } = city;
   return (
     <li>
-      <h1>Country : {country}</h1>
+      <h3>Country : {country}</h3>
       <p>Capital : {cityName}</p>
     </li>
   );

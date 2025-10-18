@@ -1,6 +1,8 @@
+import { useCities } from "../contexts/CitiesContext";
 import CityItem from "./CityItem";
 
-function CityList({ cities }) {
+function CityList() {
+  const { cities } = useCities();
   return (
     <ul>
       {cities.map((city) => (

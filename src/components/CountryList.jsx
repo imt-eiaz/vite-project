@@ -1,7 +1,10 @@
+import { useCities } from "../contexts/CitiesContext";
 import CityItem from "./CityItem";
 import CountryItem from "./CountryItem";
 
-function CountryList({ cities }) {
+function CountryList() {
+  const { cities } = useCities();
+
   const countries = cities.reduce((arr, city) => {
     if (!arr.map((el) => el.country).includes(city.country))
       return [...arr, { country: city.country, emoji: city.emoji }];

@@ -1,10 +1,10 @@
 function CityItem({ city }) {
   const { cityName, country } = city;
-
   return (
-    <div>
-      <h3>{cityName}</h3>
-    </div>
+    <li>
+      <h3>Country : {country}</h3>
+      <p>Capital : {cityName}</p>
+    </li>
   );
 }
 

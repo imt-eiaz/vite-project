@@ -1,8 +1,8 @@
 function CountryItem({ country }) {
   return (
-    <div>
-      <h3>{country}</h3>
-    </div>
+    <li>
+      <span>{country.country}</span>
+    </li>
   );
 }
 

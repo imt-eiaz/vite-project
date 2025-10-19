@@ -1,15 +1,13 @@
-import { CitiesProvider } from "../contexts/CitiesContext";
-import CityList from "./CityList";
-import CountryList from "./CountryList";
+import CitiesList from "./CitiesList";
+import CountriesList from "./CountriesList";
+import CitiesProvider from "../contexts/CitiesContext";
 
 function App() {
   return (
     <CitiesProvider>
-      <h2>Here is Cities List</h2>
-      <CityList />
-      <br />
-      <h2>Here is Countries List</h2>
-      <CountryList />
+      <CitiesList />
+      <hr />
+      <CountriesList />
     </CitiesProvider>
   );
 }

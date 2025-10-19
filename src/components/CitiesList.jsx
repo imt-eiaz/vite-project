@@ -1,13 +1,15 @@
-import CityItem from "./CityItem";
 import { useCities } from "../contexts/CitiesContext";
+import CityItem from "./CityItem";
 
 function CitiesList() {
   const { cities } = useCities();
   return (
     <div>
-      {cities.map((city) => (
-        <CityItem city={city} />
-      ))}
+      <ul>
+        {cities.map((city) => (
+          <CityItem city={city} />
+        ))}
+      </ul>
     </div>
   );
 }

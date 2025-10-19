@@ -3,7 +3,9 @@ function CityItem({ city }) {
 
   return (
     <div>
-      <h3>{cityName}</h3>
+      <li>
+        <h3>{cityName}</h3>
+      </li>
     </div>
   );
 }

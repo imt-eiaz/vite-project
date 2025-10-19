@@ -1,6 +1,6 @@
+import { CitiesProvider } from "../contexts/CitiesContext";
 import CitiesList from "./CitiesList";
 import CountriesList from "./CountriesList";
-import CitiesProvider from "../contexts/CitiesContext";
 
 function App() {
   return (
